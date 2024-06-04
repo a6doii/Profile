@@ -1,0 +1,348 @@
+section{
+    height: 1000px;
+    margin-bottom: 100px;
+    
+}
+body::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #000000; /* Background of the scrollbar track */
+}
+body::-webkit-scrollbar-track:hover {
+    background:  #000000; /* Background of the scrollbar track */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #48266e; /* Scrollbar thumb color */
+    border-radius: 15px; /* Round the corners of the scrollbar thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #9c0082bd; /* Color of the scrollbar thumb when hovered */
+}
+body{
+    background: linear-gradient(#3e3c3c , rgba(0, 0, 0, 0.841),#000000 );
+    background: linear-gradient(to top, rgba(0,0,0,0.5)30%,rgba(0,0,0,0.5)40%), url("{% static 'image/backGroundImage.jpg' %}");
+}
+.navbar{
+    height: 25px;
+    background-color: rgb(65, 34, 48);
+    display: flex;
+    width: 1900px;
+   /* z-index: 1000px;*/
+    position: fixed;
+    padding-bottom: 50px;
+
+    
+}
+
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Arial;
+    padding-left: 5px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+
+.menu {
+    width: 800px;
+    float: left;
+    height: 70px;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a ,button{
+    border-top: 3px solid rgba(0, 0, 0, 0); /* Add a top border */
+    transition: border-top-color 0.3s ease; /* Smooth transition for hover effect */
+    text-decoration: none;
+    color: #fff;
+    background: none;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    padding-top: 10px;
+}
+
+ul li a:hover {
+    color: #a792be;;
+    border-top-color: rgb(255, 255, 255);
+}
+#datame ul li a:hover{
+    color: #000000;;
+    border-top-color: rgb(195, 0, 255);
+}
+.img1{
+    border: #fff 5px solid;
+    width: 400px;
+    height: 400px;
+    float: right;
+    margin: 200px 200px 15px ;
+    border-radius: 50%;
+    background-image: url("1705563971717.jpeg");
+    background-position: center;
+    background-size: cover;
+    animation: flipTwice 4s ease-in-out forwards, smokeShadow 4s ease-in-out forwards;
+}
+@keyframes flipTwice {
+  0% {
+      transform: rotateY(0deg);
+  }
+  50% {
+      transform: rotateY(360deg);
+  }
+  100% {
+      transform: rotateY(720deg);
+  }
+}
+@keyframes smokeShadow {
+  0% {
+      box-shadow: 0 0 0 rgba(0, 0, 255, 0);
+  }
+  50% {
+      box-shadow: 0 0 20px 20px  #831c47, 0 0 40px 40px rgba(140, 110, 151, 0.4), 0 0 60px 60px rgba(14, 14, 26, 0.2);
+  }
+  100% {
+      box-shadow: 0 0 0 rgba(0, 0, 255, 0);
+  }
+}
+ .home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+}
+
+ .home-content .content h2 {
+    font-size: 70px;
+    padding-bottom: 300px;
+    padding-top: 10px;
+    margin-left: 50px;
+
+}
+
+ .home-content .content {
+    color: white;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.home-content .content p {
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+#animated-text {
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid black;
+  width: 0;
+  animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+}
+#targetSection-about button{
+    background-color: #7503a1c9; /* Blue background */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 15px 30px; /* Some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the element inline-block */
+    font-size: 16px; /* Increase font size */
+   margin-top: 10px;
+   position: absolute;
+   margin-left: 670px;
+    cursor: pointer; /* Pointer/hand icon on hover */
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease; /
+}
+#targetSection-about button:hover{
+    background-color: #831c47; /* Darker blue background on hover */
+    box-shadow: 
+    0 2px 4px rgba(255, 255, 255, 0.1), 
+    0 4px 8px rgba(255, 255, 255, 0.1), 
+    0 8px 16px rgba(255, 255, 255, 0.1), 
+    0 16px 32px rgba(255, 255, 255, 0.1); /* Multiple white shadows for a smoke-like effect */
+   transition: background-color 0.3s ease, transform 0.3s ease;
+      transform: translateY(-2px); 
+}
+.learnmore{
+  background-color: #7503a1c9; /* Blue background */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 15px 30px; /* Some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the element inline-block */
+    font-size: 16px; /* Increase font size */
+   margin-top: 10px;
+   position: absolute;
+   margin-left: 670px;
+    cursor: pointer; /* Pointer/hand icon on hover */
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease; /
+}
+.learnmore:hover{
+  background-color: #831c47; /* Darker blue background on hover */
+  box-shadow: 
+  0 2px 4px rgba(255, 255, 255, 0.1), 
+  0 4px 8px rgba(255, 255, 255, 0.1), 
+  0 8px 16px rgba(255, 255, 255, 0.1), 
+  0 16px 32px rgba(255, 255, 255, 0.1); /* Multiple white shadows for a smoke-like effect */
+ transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: translateY(-2px); 
+}
+#targetSection-about ul{
+  align-items: center; margin: 60px 400px 50px 450px;
+}
+#boot {
+    perspective: 1000px;
+  
+  
+  .container {
+    margin-top: 200px;
+    width: 600px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    animation: rotate 20s infinite linear;
+  }
+  
+  .container:hover {
+    animation-play-state: paused;
+  }
+  
+  .image-box {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 
+    0 2px 4px rgba(255, 255, 255, 0.1), 
+    0 4px 8px rgba(255, 255, 255, 0.1), 
+    0 8px 16px rgba(255, 255, 255, 0.1), 
+    0 16px 32px rgba(255, 255, 255, 0.1); 
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image1 {
+    transform: rotateY(0deg) translateZ(300px);
+  }
+  
+  .image2 {
+    transform: rotateY(120deg) translateZ(300px);
+  }
+  
+  .image3 {
+    transform: rotateY(240deg) translateZ(300px);
+  }
+  .image4 {
+    transform: rotateY(240deg) translateZ(300px);
+  }
+}
+  @keyframes rotate {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  .project-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+}
+.project-section h2 {
+    color: #7a3939;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.project-section p {
+    color: #7c117c;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.Skills-section {
+  background-color: #4b0b26;
+  padding: 20px;
+  border: 1px solid  #4b0b26;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px;
+}
+.Skills-section h2 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.Skills-section p {
+  color: #a0a0a0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.imgs-skills{
+  float: right;
+  position: absolute;
+  background-color: #f9f9f900;
+    padding: 20px;
+    border: 1px solid #4b0b26;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    top : 2220px;
+    left: 500px;
+    width: 800px;
+    height: 175px;
+    margin-right: 15px;
+    background-image: url("prag.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

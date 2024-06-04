@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-mobile.css"  media="(max-width:999px)">
+    <link rel="stylesheet" href="style.css" media="(min-width:1000px)">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <title>Al-Hussain Abdo</title>
+    
+</head>
+<body style="background-color: black;">
+    
+    <div class="navbar">
+        <div class="icon" style=" width: 250px;">
+            <h2 class="logo" ><img src="logo.png" width="75px"></h2>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="menu" id="menu">
+            <ul style="display: flex; justify-content: center;align-items: center; ">
+                <li  id="target-Projects-go"><a href="#">Projects</a></li>
+                <li  id="boot-go"><a href="#">Funny</a></li>
+                <li  id="About-me"><a href="#">About Me</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <main>
+
+
+        <section  id="targetSection1" style="background-color: black; ">
+         
+        <div class="img1">
+        </div>
+
+        <div class="home-content">
+            <div class="content">
+                <p class="text1" id="animated-text" >HELLO WORLD !!</p>
+                <h2 class="text2" >I'm Al-Hussain Abdo<br> SoftWare Engeneer</h2>
+                 
+            </div>
+
+        </section>
+
+        <section  id="target-Projects"  style="background-color: rgb(0, 0, 0);">
+            <div class="project-section">
+                <h2>Image Filtering Project (C++)</h2>
+                <p>Developed a console application with 15+ image filters (e.g., black and white, mirroring, edge detection) using C++.<br>
+                    Result: Improved image manipulation capabilities for greyscale or RGB images.</p>
+            </div>
+            <div class="project-section">
+                <h2>BigReal Data Type Implementation (C++)</h2>
+                <p>Designed and implemented a custom data type for handling large real numbers without overflow.<br>
+                    Utilized object-oriented programming (OOP) principles for efficiency.<br>
+                    Result: Enabled precise arithmetic operations on extremely large numbers.</p>
+            </div>
+            <div class="project-section">
+                <h2>VoleMachine Simulator (C++)</h2>
+                <p>Created a basic machine language simulator using C++ and OOP concepts.<br>
+                    Simulated instruction execution, memory management, and control flow.<br>
+                    Result: Enhanced understanding of low-level programming and computer architecture.</p>
+            </div>
+            <div class="project-section">
+                <h2>BoardGames System (C++)</h2>
+                <p>Developed a console-based board games system (e.g., Tic-Tac-Toe, Connect Four) with an AI opponent.<br>
+                    Implemented the Minimax algorithm with alpha-beta pruning for optimal move selection.<br>
+                    Result: Gained insights into game AI, algorithm optimization, and OOP design.</p>
+            </div>
+            <div class="project-section">
+                <h2>University Library Website (HTML/CSS/JS, APIs & Django)</h2>
+                <p>Collaborated on designing and implementing a web-based library system.<br>
+                   Created use case diagrams, sequence diagrams, and class diagrams using software engineering principles.<br>
+                   Designed an ERD for the database.<br>
+                 Result: Improved teamwork, web development skills, and design principles. 🚀</p>
+            </div>
+        
+            <button id="scrollButton-Skils" class="learnmore">Skills</button>
+
+              
+        </section>
+
+
+        <section  id="targetSection-Skills"   style="background-color: rgba(0, 0, 0, 0.699);">
+            <div class="Skills-section">
+                <h2>Programming language : </h2>
+                <p>- C++<br>- C# <br>- Java & Js<br>- Python<br>- SQL<br></p>
+                <div class="imgs-skills">
+                         
+                </div>
+            </div>
+
+            <button id="scrollButton-learnmore" class="learnmore">Skills</button>
+
+
+        </section>
+
+
+        <section  id="targetSection"  style="background-color: rgba(0, 0, 0, 0.418);">
+
+
+            <button id="scrollButton-learnmore" class="learnmore">Learn More</button>
+
+
+        </section>
+
+
+        <section  id="targetSection"  style="background-color: rgba(0, 0, 0, 0.562);">
+            
+            
+            <button id="scrollButton-learnmore" class="learnmore">Learn More</button>
+
+
+        </section>
+
+
+        <section   id="boot" style="background-color: rgba(20, 18, 19, 0.5);">
+
+
+            <div class="container">
+                <div class="image-box image1">
+                  <img src="oop.jpg" alt="Image 1">
+                </div>
+                <div class="image-box image2">
+                  <img src="cpp.png" alt="Image 2">
+                </div>
+                <div class="image-box image3">
+                  <img src="python.png" alt="Image 3">
+                </div>
+                <div class="image-box image4">
+                    <img src="MSSQL.jpg" alt="Image 4">
+                  </div>
+              </div>
+
+        
+        </section>
+        <section   id="targetSection-about" style="background-color: rgba(52, 46, 66, 0); height: 200px;">
+
+              
+            <button id="scrollButton-Go-back" class="learnmore">GO UP</button>
+            
+                 <ul  id="datame">
+                <li><a href="https://www.linkedin.com/in/a6do">Linkedin</a></li>
+                <li><a href="https://github.com/a6doii">GitHub</a></li>
+                <li><a  href="mailto:abdohussin026@gmail.com" >E-mail</a></li>
+                <li><a href="https://www.instagram.com/a6do.ii/">Instagram</a></li>
+                
+
+               
+            </ul>
+         
+           
+            
+
+
+        
+        </section>
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+    const text = document.getElementById('animated-text');
+    const content = text.textContent;
+    text.textContent = '';
+
+    let i = 0;
+    function type() {
+        if (i < content.length) {
+            text.textContent += content.charAt(i);
+            i++;
+            setTimeout(type, 100);
+        }
+    }
+    
+    type();
+});
+            document.getElementById('About-me').addEventListener('click', function() {
+                       document.getElementById('targetSection-about').scrollIntoView({
+                           behavior: 'smooth'
+                       });s
+                   });
+
+
+
+
+                   document.getElementById('scrollButton-Go-back').addEventListener('click', function() {
+                       document.getElementById('targetSection1').scrollIntoView({
+                           behavior: 'smooth'
+                       });
+                   });
+
+
+
+                   document.getElementById('boot-go').addEventListener('click', function() {
+                       document.getElementById('boot').scrollIntoView({
+                           behavior: 'smooth'
+                       });
+                   });
+
+
+
+                   document.getElementById('target-Projects-go').addEventListener('click', function() {
+                       document.getElementById('target-Projects').scrollIntoView({
+                           behavior: 'smooth'
+                       });
+                   });
+
+
+
+                   document.getElementById('scrollButton').addEventListener('click', function() {
+                       document.getElementById('').scrollIntoView({
+                           behavior: 'smooth'
+                       });
+                   });
+
+
+                   document.getElementById('scrollButton').addEventListener('click', function() {
+                       document.getElementById('').scrollIntoView({
+                           behavior: 'smooth'
+                       });
+                   });
+
+
+
+                   document.getElementById('scrollButton').addEventListener('click', function() {
+                       document.getElementById('').scrollIntoView({
+                           behavior: 'smooth'
+                       });
+                   });
+                
+                   document.addEventListener('DOMContentLoaded', () => {
+                    const hamburger = document.getElementById('hamburger');
+                    const menu = document.getElementById('menu');
+
+                    hamburger.addEventListener('click', () => {
+                    menu.classList.toggle('active');
+                         hamburger.classList.toggle('active');
+                      });
+                          });
+                   
+
+                          // Get the navbar
+var navbar = document.querySelector(".navbar");
+
+// Get the initial scroll position
+var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+// Set a threshold value for when to hide/show the navbar
+var threshold = 100;
+
+// Function to handle scroll event
+function handleScroll() {
+    // Get the current scroll position
+    var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Check if the user scrolled more than the threshold value and in which direction
+    if (Math.abs(currentScroll - lastScrollTop) > threshold) {
+        // Determine the scrolling direction
+        if (currentScroll > lastScrollTop) {
+            // Scrolling down, hide the navbar
+            navbar.style.top = "-100px";
+        } else {
+            // Scrolling up, show the navbar
+            navbar.style.top = "0";
+        }
+        
+        // Update the last scroll position
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    }
+}
+
+// Add scroll event listener to window
+window.addEventListener("scroll", handleScroll);
+                   </script>
+
+    </main>
+
+</body>
+
+</html>
