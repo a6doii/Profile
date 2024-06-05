@@ -9,7 +9,51 @@
     <link rel="stylesheet" href="style.css" media="(min-width:1000px)">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <title>Al-Hussain Abdo</title>
-    
+    <script>
+              document.addEventListener('DOMContentLoaded', () => {
+                    const hamburger = document.getElementById('hamburger');
+                    const menu = document.getElementById('menu');
+
+                    hamburger.addEventListener('click', () => {
+                    menu.classList.toggle('active');
+                         hamburger.classList.toggle('active');
+                      });
+                          });
+                   
+
+                          // Get the navbar
+        var navbar = document.querySelector(".navbar");
+
+// Get the initial scroll position
+var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+// Set a threshold value for when to hide/show the navbar
+var threshold = 100;
+
+// Function to handle scroll event
+function handleScroll() {
+    // Get the current scroll position
+    var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Check if the user scrolled more than the threshold value and in which direction
+    if (Math.abs(currentScroll - lastScrollTop) > threshold) {
+        // Determine the scrolling direction
+        if (currentScroll > lastScrollTop) {
+            // Scrolling down, hide the navbar
+            navbar.style.top = "-100px";
+        } else {
+            // Scrolling up, show the navbar
+            navbar.style.top = "0";
+        }
+        
+        // Update the last scroll position
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    }
+}
+
+// Add scroll event listener to window
+window.addEventListener("scroll", handleScroll);
+    </script>
 </head>
 <body style="background-color: black;">
     
@@ -234,49 +278,8 @@
                        });
                    });
                 
-                   document.addEventListener('DOMContentLoaded', () => {
-                    const hamburger = document.getElementById('hamburger');
-                    const menu = document.getElementById('menu');
+                
 
-                    hamburger.addEventListener('click', () => {
-                    menu.classList.toggle('active');
-                         hamburger.classList.toggle('active');
-                      });
-                          });
-                   
-
-                          // Get the navbar
-var navbar = document.querySelector(".navbar");
-
-// Get the initial scroll position
-var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-// Set a threshold value for when to hide/show the navbar
-var threshold = 100;
-
-// Function to handle scroll event
-function handleScroll() {
-    // Get the current scroll position
-    var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-    // Check if the user scrolled more than the threshold value and in which direction
-    if (Math.abs(currentScroll - lastScrollTop) > threshold) {
-        // Determine the scrolling direction
-        if (currentScroll > lastScrollTop) {
-            // Scrolling down, hide the navbar
-            navbar.style.top = "-100px";
-        } else {
-            // Scrolling up, show the navbar
-            navbar.style.top = "0";
-        }
-        
-        // Update the last scroll position
-        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-    }
-}
-
-// Add scroll event listener to window
-window.addEventListener("scroll", handleScroll);
                    </script>
 
     </main>
